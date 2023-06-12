@@ -3,6 +3,3 @@ eureka:
     hostname: localhost
 server:
   port: 8111
-spring:
-  application:
-    name: user-service
