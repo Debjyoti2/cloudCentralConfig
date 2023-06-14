@@ -3,3 +3,16 @@ eureka:
     hostname: localhost
 server:
   port: 8013
+spring:
+ datasource:
+   driver-class-name: oracle.jdbc.OracleDriver
+   url: jdbc:oracle:thin:@localhost:1521:orcl
+   username: sys as sysdba
+   password: oracle
+ 
+ jpa:
+  properties:
+   hibernate:
+    dilect: org.hibernate.dialect.Oracle12cDialect
+  hibernate:
+   ddl-auto: update
